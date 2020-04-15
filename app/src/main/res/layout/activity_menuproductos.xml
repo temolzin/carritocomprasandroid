@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonVerCarritoProducto"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:text="Ver Carrito"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewCantidadVerCarrito"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/buttonVerCarritoProducto"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="0" />
+
+    <ListView
+        android:id="@+id/listViewProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonVerCarritoProducto"/>
+</RelativeLayout>
